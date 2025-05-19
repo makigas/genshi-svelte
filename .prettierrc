@@ -3,6 +3,9 @@
 	"singleQuote": true,
 	"trailingComma": "all",
 	"printWidth": 100,
+	"bracketSameLine": true,
+	"htmlWhitespaceSensitivity": "ignore",
+	"proseWrap": "always",
 	"plugins": ["prettier-plugin-svelte"],
 	"overrides": [
 		{

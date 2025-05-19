@@ -7,7 +7,8 @@ title: Stack
 import {Button, Stack} from '$lib';
 </script>
 
-Stacks allow to group horizontally or vertically a set of nodes. Note that the elements will keep their size. In other words, this is not a flexbox, but a grid.
+Stacks allow to group horizontally or vertically a set of nodes. Note that the elements will keep
+their size. In other words, this is not a flexbox, but a grid.
 
 To create an stack, use the following code:
 
@@ -33,7 +34,8 @@ To create an stack, use the following code:
 
 ## Stack positioning
 
-Use the `align` prop to set where to locate the elements in the stack. For instance, use `align="end"` to center them to the opposite border of the view.
+Use the `align` prop to set where to locate the elements in the stack. For instance, use
+`align="end"` to center them to the opposite border of the view.
 
 <Stack align="end">
 	<Button>Compose</Button>
@@ -62,7 +64,8 @@ Or place space between each element with `align="between"`:
 
 ## Stack direction
 
-By default, the stack is horizontal: items are placed horizontally. You can change this with the additional modifiers:
+By default, the stack is horizontal: items are placed horizontally. You can change this with the
+additional modifiers:
 
 To make a vertical stack, use the `direction="vertical"` prop:
 
@@ -73,7 +76,8 @@ To make a vertical stack, use the `direction="vertical"` prop:
 	<Button>Forward</Button>
 </Stack>
 
-You can also reverse the positioning of the elements by using the `reverse` prop. If you use this prop, the order of the elements will be reversed.
+You can also reverse the positioning of the elements by using the `reverse` prop. If you use this
+prop, the order of the elements will be reversed.
 
 <Stack align="center">
 	<Stack direction="vertical">

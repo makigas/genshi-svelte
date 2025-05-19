@@ -12,15 +12,30 @@ let install = "xs";
 
 The radio button component.
 
-Radio buttons usually are placed in a `RadioGroup`. Not only it adds semantic value to the form, but also it provides validation to the whole fieldset, and allows to mark the fieldset as inline.
+Radio buttons usually are placed in a `RadioGroup`. Not only it adds semantic value to the form, but
+also it provides validation to the whole fieldset, and allows to mark the fieldset as inline.
 
 ```svelte
-import { RadioButton, RadioGroup } from '@makigas/genshi-svelte';
+import {(RadioButton, RadioGroup)} from '@makigas/genshi-svelte';
 
 <RadioGroup label="Install updates">
-  <RadioButton checked label="Install update now" bind:group={updates} value="now" helper="The application will be restarted" />
-  <RadioButton label="Install update later"  bind:group={updates} value="later" helper="The application will be updated on next launch" />
-  <RadioButton disabled label="Do not update the app" bind:group={updates} value="never" helper="You cannot disable updates if you are using the free version" />
+	<RadioButton
+		checked
+		label="Install update now"
+		bind:group={updates}
+		value="now"
+		helper="The application will be restarted" />
+	<RadioButton
+		label="Install update later"
+		bind:group={updates}
+		value="later"
+		helper="The application will be updated on next launch" />
+	<RadioButton
+		disabled
+		label="Do not update the app"
+		bind:group={updates}
+		value="never"
+		helper="You cannot disable updates if you are using the free version" />
 </RadioGroup>
 ```
 
@@ -42,7 +57,9 @@ If you add the `inline` prop to a `RadioGroup`, you can make it render inline.
 
 ## Validation
 
-You can mark the whole `RadioGroup` as invalid or valid using the `validation` attribute. Unlike Genshi, the Svelte integration does not offer support for marking specific radio buttons as valid or invalid.
+You can mark the whole `RadioGroup` as invalid or valid using the `validation` attribute. Unlike
+Genshi, the Svelte integration does not offer support for marking specific radio buttons as valid or
+invalid.
 
 <RadioGroup label="Install updates" validation="invalid" helper="You must pick a value">
 <RadioButton checked label="Install update now" bind:group={updates} value="now" />

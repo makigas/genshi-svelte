@@ -45,7 +45,6 @@
 		DIRECTION_MAPPING[direction][reversed ? 'reversed' : 'normal'],
 		className,
 	]}
-	{...rest}
->
+	{...rest}>
 	{@render children?.()}
 </div>

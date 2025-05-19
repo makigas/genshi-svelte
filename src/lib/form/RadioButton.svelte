@@ -31,8 +31,7 @@
 			{disabled}
 			class={['GenshiInput__control', inputClass]}
 			type="radio"
-			{...inputRest}
-		/>
+			{...inputRest} />
 		{label}
 	</label>
 	{#if helper}

@@ -8,7 +8,8 @@ import { Cols, Stack, TextField } from '$lib';
 import { User, AtSign, Check, Send, TriangleAlert } from "@lucide/svelte"
 </script>
 
-This component can be used to present text fields and other keyboard input fields such as passwords, emails, phone numbers or URLs.
+This component can be used to present text fields and other keyboard input fields such as passwords,
+emails, phone numbers or URLs.
 
 Use the `TextField` component to render a text field.
 
@@ -18,8 +19,7 @@ import {TextField} from '@makigas/genshi-svelte';
 <TextField
 	label="User name"
 	placeholder="Type your username"
-	helper="Your username must have between 3 and 10 characters."
-/>
+	helper="Your username must have between 3 and 10 characters." />
 ```
 
 <TextField
@@ -75,7 +75,8 @@ Add the `readonly` prop to make it read-only.
 
 ## Icons
 
-You can use the `iconBefore` and `iconAfter` attributes to pass a Lucide component const to render it at the start or at the end of the field.
+You can use the `iconBefore` and `iconAfter` attributes to pass a Lucide component const to render
+it at the start or at the end of the field.
 
 <Cols>
     <TextField label="User bio" placeholder="User bio" iconBefore={User} />
@@ -85,7 +86,8 @@ You can use the `iconBefore` and `iconAfter` attributes to pass a Lucide compone
 
 ## Validation
 
-You can add the `validation` prop to mark the field as valid or invalid with either the `"valid"` or `"invalid"` string. Absence of this prop will mark the field as default.
+You can add the `validation` prop to mark the field as valid or invalid with either the `"valid"` or
+`"invalid"` string. Absence of this prop will mark the field as default.
 
 <Cols>
     <TextField label="User name" placeholder="Type your username" type="text" helper="Everything looks valid" value="john.doe222" validation="valid" iconAfter={Check} />
@@ -96,9 +98,8 @@ You can add the `validation` prop to mark the field as valid or invalid with eit
 
 You can use the `size` prop to change the size of the component.
 
-If you don't want to use the default medium size,
-change it via the `size` parameter, which accepts one of the possible values in:
-`xs sm md lg xl`.
+If you don't want to use the default medium size, change it via the `size` parameter, which accepts
+one of the possible values in: `xs sm md lg xl`.
 
 <TextField label="User name" placeholder="Type your username" size="xs" iconBefore={AtSign} iconAfter={Check} />
 

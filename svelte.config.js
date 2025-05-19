@@ -25,6 +25,7 @@ const transformers = [
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
+	extensions: ['.svelte.md'],
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme, transformers }));
@@ -44,7 +45,7 @@ const config = {
 			base: '/genshi-svelte',
 		},
 	},
-	extensions: ['.svelte', '.svx'],
+	extensions: ['.svelte', '.svelte.md'],
 };
 
 export default config;

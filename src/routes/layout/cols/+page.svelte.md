@@ -5,7 +5,8 @@ title: Cols
 
 <script>import {Cols} from '$lib';</script>
 
-Cols create equally sized columns to render HTML. This component is equivalent to an horizontal flex where every item has the same size.
+Cols create equally sized columns to render HTML. This component is equivalent to an horizontal flex
+where every item has the same size.
 
 To create a cols, use the following code:
 

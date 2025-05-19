@@ -13,14 +13,16 @@ let continent2 = ["america", "asia"];
 The select component allows to pick an item from a list.
 
 ```svelte
-import { Select, SelectOption } from "@makigas/genshi-svelte";
+import {(Select, SelectOption)} from "@makigas/genshi-svelte";
 
-<Select label="Continent" placeholder="Specify your region in order to show the fastest CDNs in your area.">
-    <SelectOption value="africa">Africa</SelectOption>
-    <SelectOption value="america">America</SelectOption>
-    <SelectOption value="asia">Asia</SelectOption>
-    <SelectOption value="europe">Europe</SelectOption>
-    <SelectOption value="oceania">Oceania</SelectOption>
+<Select
+	label="Continent"
+	placeholder="Specify your region in order to show the fastest CDNs in your area.">
+	<SelectOption value="africa">Africa</SelectOption>
+	<SelectOption value="america">America</SelectOption>
+	<SelectOption value="asia">Asia</SelectOption>
+	<SelectOption value="europe">Europe</SelectOption>
+	<SelectOption value="oceania">Oceania</SelectOption>
 </Select>
 ```
 
@@ -38,12 +40,16 @@ import { Select, SelectOption } from "@makigas/genshi-svelte";
 Pass the `multiple` prop to the `Select` component to render it as a list.
 
 ```svelte
-<Select multiple rows="3" label="Continent" placeholder="Specify your region in order to show the fastest CDNs in your area.">
-    <SelectOption value="africa">Africa</SelectOption>
-    <SelectOption value="america">America</SelectOption>
-    <SelectOption value="asia">Asia</SelectOption>
-    <SelectOption value="europe">Europe</SelectOption>
-    <SelectOption value="oceania">Oceania</SelectOption>
+<Select
+	multiple
+	rows="3"
+	label="Continent"
+	placeholder="Specify your region in order to show the fastest CDNs in your area.">
+	<SelectOption value="africa">Africa</SelectOption>
+	<SelectOption value="america">America</SelectOption>
+	<SelectOption value="asia">Asia</SelectOption>
+	<SelectOption value="europe">Europe</SelectOption>
+	<SelectOption value="oceania">Oceania</SelectOption>
 </Select>
 ```
 
@@ -80,7 +86,8 @@ Selects can also be disabled with the `disabled` prop:
 
 ## Validation
 
-You can add the `validation` prop to mark the field as valid or invalid with either the `"valid"` or `"invalid"` string. Absence of this prop will mark the field as default.
+You can add the `validation` prop to mark the field as valid or invalid with either the `"valid"` or
+`"invalid"` string. Absence of this prop will mark the field as default.
 
 <Cols>
 <Select label="Continent" value="america" placeholder="The resource will be created in this region" validation="valid">

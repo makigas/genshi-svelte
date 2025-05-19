@@ -11,7 +11,7 @@ import { Star, Check, TriangleAlert, Paperclip } from "@lucide/svelte";
 File controls can be used to select files and attach them to forms.
 
 ```svelte
-import { FileField } from "@makigas/svelte";
+import {FileField} from "@makigas/svelte";
 
 <FileField label="Avatar" helper="Select a photo to use as profile picture." />
 ```
@@ -26,13 +26,15 @@ Add the `disabled` prop to mark the field as disabled.
 
 ## Icon
 
-The `FileField` component supports an additional snippet called `iconAfter`, to put an icon at the end of the input. There is no point on adding an icon at the start due to the nature of this widget.
+The `FileField` component supports an additional snippet called `iconAfter`, to put an icon at the
+end of the input. There is no point on adding an icon at the start due to the nature of this widget.
 
 <FileField label="Avatar" iconAfter={Star} />
 
 ## Validation
 
-For validation purposes, you can add the `validation` prop with the value either as `"valid"` or `"invalid"`.
+For validation purposes, you can add the `validation` prop with the value either as `"valid"` or
+`"invalid"`.
 
 <FileField label="Avatar" helper="File uploaded correctly." validation="valid" iconAfter={Check} />
 

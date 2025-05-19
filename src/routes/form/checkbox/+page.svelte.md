@@ -10,9 +10,11 @@ import { Checkbox, Stack } from '$lib';
 The checkbox component.
 
 ```svelte
-import { Checkbox } from '@makigas/genshi-svelte';
+import {Checkbox} from '@makigas/genshi-svelte';
 
-<Checkbox label="Subscribe to updates" helper="You will receive changes to this content in your e-mail." />
+<Checkbox
+	label="Subscribe to updates"
+	helper="You will receive changes to this content in your e-mail." />
 ```
 
 <Checkbox label="Subscribe to updates" helper="You will receive changes to this content in your e-mail." />
@@ -23,7 +25,8 @@ import { Checkbox } from '@makigas/genshi-svelte';
 
 ## Validation
 
-Checkboxes can be valid or invalid. Pass the `validation` prop with the value either as `"valid"` or `"invalid"` if you want to mark the field as such.
+Checkboxes can be valid or invalid. Pass the `validation` prop with the value either as `"valid"` or
+`"invalid"` if you want to mark the field as such.
 
 <Stack align="start">
     <Stack density="compact" direction="vertical">

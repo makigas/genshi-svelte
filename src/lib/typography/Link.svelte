@@ -38,8 +38,7 @@
 		},
 		className,
 	]}
-	{...rest}
->
+	{...rest}>
 	{#if IconBefore}
 		<IconBefore class="GenshiButton__icon" />
 	{/if}

@@ -20,7 +20,6 @@
 		},
 		className,
 	]}
-	{...rest}
->
+	{...rest}>
 	{@render children?.()}
 </div>

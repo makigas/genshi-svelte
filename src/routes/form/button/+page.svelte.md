@@ -22,12 +22,11 @@ To create a button, use the `Button` component:
 
 ## Links as buttons
 
-Use the `Link` component instead. It accepts a prop called `href` with an URL.
-The button will be rendered as an hyperlink. It is important to always understand the
-semantic distinction between a link and a
-button. Only pass an `href` prop if you want the browser to point at a different address. You
-shouldn't use regular buttons with JavaScript events to change the browser URL if you can avoid it.
-Also, you shouldn't use a link to trigger some interactivity.
+Use the `Link` component instead. It accepts a prop called `href` with an URL. The button will be
+rendered as an hyperlink. It is important to always understand the semantic distinction between a
+link and a button. Only pass an `href` prop if you want the browser to point at a different address.
+You shouldn't use regular buttons with JavaScript events to change the browser URL if you can avoid
+it. Also, you shouldn't use a link to trigger some interactivity.
 
 ```svelte
 <script>
@@ -41,9 +40,11 @@ Also, you shouldn't use a link to trigger some interactivity.
 
 ## Buttons with icons
 
-The button component is compatible with symbolic icons. You can provide two snippets called `iconBefore` and `iconAfter`. **These snippets must emit SVG.**
+The button component is compatible with symbolic icons. You can provide two snippets called
+`iconBefore` and `iconAfter`. **These snippets must emit SVG.**
 
-You can also omit the text altogether, but remember to use an `aria-label` in that case in the `Button` component.
+You can also omit the text altogether, but remember to use an `aria-label` in that case in the
+`Button` component.
 
 <Button iconBefore={Heart}>
     Like

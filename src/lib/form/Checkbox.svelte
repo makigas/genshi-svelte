@@ -30,8 +30,7 @@
 			class={['GenshiInput__control', inputClass]}
 			type="checkbox"
 			aria-invalid={ariaInvalid(validation)}
-			{...inputRest}
-		/>
+			{...inputRest} />
 		{label}
 	</label>
 	{#if helper}

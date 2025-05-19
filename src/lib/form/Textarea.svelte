@@ -48,8 +48,8 @@
 		{rows}
 		class={['GenshiInput__control', mono && 'GenshiInput--mono', inputClass]}
 		aria-invalid={ariaInvalid(validation)}
-		{...inputRest}
-	></textarea>
+		{...inputRest}>
+	</textarea>
 	{#if IconAfter}
 		<IconAfter class="GenshiInput__icon" />
 	{/if}

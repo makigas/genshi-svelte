@@ -63,8 +63,7 @@
 		label="Name"
 		size="lg"
 		validation={formSent && 'invalid'}
-		helper={formSent && 'This username is taken'}
-	/>
+		helper={formSent && 'This username is taken'} />
 	<TextField bind:value={form.email} type="email" label="E-mail" mono />
 	<TextField bind:value={form.password} type="password" label="Password" />
 	<TextField readonly label="Referer code" value="123412341234" helper="You cannot change that" />
@@ -91,8 +90,7 @@
 		<RadioButton
 			bind:group={form.newsletter}
 			value="none"
-			label="No, I want to continue being a bad developer"
-		/>
+			label="No, I want to continue being a bad developer" />
 	</RadioGroup>
 
 	<RadioGroup label="Accept terms">
@@ -100,8 +98,7 @@
 			bind:checked={form.readTOS}
 			validation={!tosValid && 'invalid'}
 			label="I have read the terms and conditions"
-			helper={!tosValid && "But you haven't read the TOS!"}
-		/>
+			helper={!tosValid && "But you haven't read the TOS!"} />
 		<Checkbox bind:checked={form.sellSoul} label="Sell my soul to the marketing team" />
 	</RadioGroup>
 

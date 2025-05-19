@@ -58,8 +58,7 @@
 		{placeholder}
 		class={['GenshiInput__control', mono && 'GenshiInput--mono', inputClass]}
 		aria-invalid={ariaInvalid(validation)}
-		{...inputRest}
-	/>
+		{...inputRest} />
 	{#if IconAfter}
 		<IconAfter class="GenshiInput__icon" />
 	{/if}

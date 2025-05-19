@@ -39,14 +39,16 @@
 			size={rows}
 			class={['GenshiSelect__control', inputClass]}
 			aria-invalid={ariaInvalid(validation)}
-			{...inputRest}>{@render children()}</select
-		>
+			{...inputRest}>
+			{@render children()}
+		</select>
 	{:else}<select
 			bind:value
 			{disabled}
 			size={rows}
 			class={['GenshiSelect__control', inputClass]}
 			aria-invalid={ariaInvalid(validation)}
-			{...inputRest}>{@render children()}</select
-		>{/if}
+			{...inputRest}>
+			{@render children()}
+		</select>{/if}
 </FormControl>

@@ -3,33 +3,35 @@ layout: docs
 title: Wrapper
 ---
 
-A wrapper is a centered block region that contains some HTML, whose main purpose is usually to control or limit its width in the browser viewport.
+A wrapper is a centered block region that contains some HTML, whose main purpose is usually to
+control or limit its width in the browser viewport.
 
-Typically you see wrappers in many pages where the page layout wants to have a known width, no matter the screen resolution of the user browser.
+Typically you see wrappers in many pages where the page layout wants to have a known width, no
+matter the screen resolution of the user browser.
 
 ```svelte
 <script>
-    import { Wrapper } from '@makigas/genshi-svelte';
+	import { Wrapper } from '@makigas/genshi-svelte';
 
-    <Wrapper>
-        <p>I am contained inside the screen.</p>
-    </Wrapper>
+	<Wrapper>
+		<p>I am contained inside the screen.</p>
+	</Wrapper>;
 </script>
 ```
 
-Another use case of wrappers is to be defined inside an element like a hero or a header.
-The element will define a background color that spans the complete browser width (100%),
-but the wrapper allows the content to stay centered.
+Another use case of wrappers is to be defined inside an element like a hero or a header. The element
+will define a background color that spans the complete browser width (100%), but the wrapper allows
+the content to stay centered.
 
 ```svelte
 <script>
-    import { Wrapper } from '@makigas/genshi-svelte';
+	import { Wrapper } from '@makigas/genshi-svelte';
 
-    <div class="jumbo">
-        <Wrapper>
-            <p>I am contained inside the screen.</p>
-        </Wrapper>
-    </div>
+	<div class="jumbo">
+		<Wrapper>
+			<p>I am contained inside the screen.</p>
+		</Wrapper>
+	</div>;
 </script>
 ```
 
@@ -56,17 +58,17 @@ poorly for text, because on bigger screens the number of characters per line may
 
 ```svelte
 <Wrapper fluid>
-    <NavbarContents />
+	<NavbarContents />
 </Wrapper>
 ```
 
 ## Breath
 
-A quick helper modifier is `breath`. Add this prop if you want to force some margin
-above and below the wrapper, to let the item breathe vertically inside its parent element:
+A quick helper modifier is `breath`. Add this prop if you want to force some margin above and below
+the wrapper, to let the item breathe vertically inside its parent element:
 
 ```svelte
 <Wrapper breath>
-    <p>Welcome</p>
+	<p>Welcome</p>
 </Wrapper>
 ```

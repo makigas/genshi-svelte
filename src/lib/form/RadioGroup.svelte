@@ -26,8 +26,7 @@
 	class={['GenshiRadioGroup', { 'GenshiRadioGroup--inline': inline }, className]}
 	role="radiogroup"
 	aria-invalid={ariaInvalid(validation)}
-	{...rest}
->
+	{...rest}>
 	<legend>{label}</legend>
 	{@render children()}
 	{#if helper}
