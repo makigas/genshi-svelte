@@ -14,7 +14,7 @@
 	<title>Genshi-Svelte</title>
 </svelte:head>
 
-<div>
+<div class="docs">
 	<Wrapper>
 		<div class="app">
 			<div class="app-left">
@@ -40,7 +40,7 @@
 		}
 	}
 
-	:global(body) {
+	.docs {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
